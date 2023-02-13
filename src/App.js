@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+import Router from './router/Router'
+import Global from './styles/Global'
+import Header from './components/organisms/header/Header';
+import Footer from './components/organisms/footer/Footer'
+import Wrapper from './components/molecules/wrapper/mf/Wrapper';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <Router />
+      <Wrapper />
+      <Footer />
+      <Global />
+    </>
+  )
 }
 
 export default App;
