@@ -61,6 +61,34 @@ export const Container = styled.div`
                     }
                 }
             }
+
+            .email {
+
+                .text {
+                    display: flex;
+                    align-items: center;
+                    
+                    #icon {
+                        font-size: 18px;
+                        margin-left: 1em;
+                        color: #2266B3;
+                    }
+                }
+            }
+
+            .phone {
+
+                .text {
+                    display: flex;
+                    align-items: center;
+                    
+                    #icon {
+                        font-size: 18px;
+                        margin-left: 1em;
+                        color: #2266B3;
+                    }
+                }
+            }
         }
 
         .desktop {

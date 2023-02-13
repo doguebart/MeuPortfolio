@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from './styles';
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaYoutube } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaYoutube, FaCopy } from 'react-icons/fa'
 
 const Contato = () => {
+
     return (
         <Container>
             <div className="content">
@@ -41,6 +43,10 @@ const Contato = () => {
 
                         <div className="text">
                             <span>douglas.welber@outlook.com</span>
+
+                            <CopyToClipboard text={'douglas.welber@outlook.com'}>
+                                <FaCopy id='icon' />
+                            </CopyToClipboard>
                         </div>
 
                     </div>
@@ -52,6 +58,10 @@ const Contato = () => {
 
                         <div className="text">
                             <span>+55 11 93398-6562</span>
+
+                            <CopyToClipboard text={'+55 11 93398-6562'}>
+                                <FaCopy id='icon' />
+                            </CopyToClipboard>
                         </div>
 
                     </div>
